@@ -28,6 +28,7 @@ import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
@@ -402,12 +403,22 @@ fun TodayBloodSugarValues(
                 color = Color.Gray
             )
         } else {
-            records.forEach { record ->
+            records.forEachIndexed { index, record ->
+                if (index > 0) {
+                    HorizontalDivider(
+                        thickness = 1.dp,
+                        color = Color(0xFFE0E0E0)
+                    )
+                }
+
                 BloodSugarValueRow(
                     record = record,
                     onDelete = { onDeleteRecord(record.id) }
                 )
-                Spacer(modifier = Modifier.height(8.dp))
+
+                if (index == records.size - 1) {
+                    Spacer(modifier = Modifier.height(8.dp))
+                }
             }
         }
     }
@@ -421,11 +432,7 @@ fun BloodSugarValueRow(
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .background(
-                color = Color(0xFFF8F9FA),
-                shape = RoundedCornerShape(8.dp)
-            )
-            .padding(16.dp),
+            .padding(top = 16.dp),
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically
     ) {
@@ -451,7 +458,7 @@ fun BloodSugarValueRow(
                 fontSize = 14.sp,
                 fontWeight = FontWeight.Medium
             )
-            Spacer(modifier = Modifier.width(8.dp))
+            Spacer(modifier = Modifier.width(24.dp))
             Icon(
                 imageVector = Icons.Default.Delete,
                 contentDescription = "Delete",
