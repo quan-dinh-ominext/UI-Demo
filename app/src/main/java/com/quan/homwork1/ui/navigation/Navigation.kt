@@ -30,6 +30,7 @@ import androidx.navigation.compose.rememberNavController
 import com.quan.homwork1.ui.model.Destination
 import com.quan.homwork1.ui.pages.AlcoholScreen
 import com.quan.homwork1.ui.pages.BloodGlucoseScreen
+//import com.quan.homwork1.ui.pages.BloodGlucoseScreen
 import com.quan.homwork1.ui.pages.SmokeScreen
 
 @Composable
@@ -47,7 +48,7 @@ fun AppNavHost(
             composable(destination.route) {
                 when (destination) {
                     Destination.SMOKE -> SmokeScreen()
-                    Destination.BLOOD_GLUCOSE -> BloodGlucoseScreen()
+                    Destination.BLOOD_GLUCOSE ->BloodGlucoseScreen()
                     Destination.ALCOHOL -> AlcoholScreen()
                     Destination.TAB1 -> null
                     Destination.TAB2 -> null

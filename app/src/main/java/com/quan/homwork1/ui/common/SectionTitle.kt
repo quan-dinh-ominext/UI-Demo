@@ -11,6 +11,7 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun SectionTitle(
+    modifier: Modifier = Modifier,
     mainText: String,
     subText: String = "",
     mainTextSize: TextUnit = 16.sp,
@@ -18,8 +19,7 @@ fun SectionTitle(
     mainTextColor: Color = Color(0xFF5B6B86),
     subTextColor: Color = Color(0xFF8292AA),
     mainTextWeight: FontWeight = FontWeight.W400,
-    subTextWeight: FontWeight = FontWeight.W400,
-    modifier: Modifier = Modifier
+    subTextWeight: FontWeight = FontWeight.W400
 ) {
     Row(modifier = modifier) {
         Text(
