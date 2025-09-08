@@ -19,6 +19,9 @@ material3 = "1.3.2"
 foundation = "1.9.0"
 runtime = "1.9.0"
 lifecycleViewmodelKtx = "2.9.3"
+uiGraphics = "1.9.0"
+foundationLayout = "1.9.0"
+adaptiveLayout = "1.1.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -46,6 +49,9 @@ material3 = { group = "androidx.compose.material3", name = "material3", version.
 androidx-foundation = { group = "androidx.compose.foundation", name = "foundation", version.ref = "foundation" }
 androidx-runtime = { group = "androidx.compose.runtime", name = "runtime", version.ref = "runtime" }
 androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics", version.ref = "uiGraphics" }
+androidx-foundation-layout = { group = "androidx.compose.foundation", name = "foundation-layout", version.ref = "foundationLayout" }
+androidx-adaptive-layout = { group = "androidx.compose.material3.adaptive", name = "adaptive-layout", version.ref = "adaptiveLayout" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

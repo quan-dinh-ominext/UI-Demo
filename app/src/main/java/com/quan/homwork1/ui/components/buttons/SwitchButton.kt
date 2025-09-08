@@ -1,5 +1,6 @@
 package com.quan.homwork1.ui.components.buttons
 
+import android.app.TimePickerDialog
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
@@ -7,6 +8,7 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.*
@@ -16,68 +18,88 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.quan.homwork1.R
+import com.quan.homwork1.ui.theme.BackgroundColorSwitch
+import com.quan.homwork1.ui.theme.BorderColor
+import com.quan.homwork1.ui.theme.Dimens
+import com.quan.homwork1.ui.theme.TextPrimary
+import java.util.Calendar
 
-enum class TimePeriod(val displayName: String, val icon: String) {
-    MORNING("午前", "🌅"),
-    AFTERNOON("午後", "🌆")
-}
+//enum class TimePeriod(var displayName: String) {
+//    MORNING("午前",),
+//    AFTERNOON("午後",)
+//}
 
 @Composable
 fun SimpleSwitchButton(
-    selectedPeriod: TimePeriod,
-    onPeriodChange: (TimePeriod) -> Unit,
+    selectedOption: String,
+    onOptionSelected: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {
+    val options = listOf("午前", "午后")
+
     Row(
         modifier = modifier
             .background(
-                Color(0xFFF5F5F5),
-                RoundedCornerShape(20.dp)
+                color = Color(0xFFF5F5F5),
+                shape = RoundedCornerShape(25.dp)
             )
-            .padding(2.dp),
-        horizontalArrangement = Arrangement.SpaceEvenly
+            .padding(4.dp)
     ) {
-        TimePeriod.entries.forEach { period ->
-            val isSelected = period == selectedPeriod
+        options.forEach { option ->
+            val isSelected = option == selectedOption
 
             Box(
                 modifier = Modifier
                     .weight(1f)
-                    .clip(RoundedCornerShape(18.dp))
+                    .clip(RoundedCornerShape(20.dp))
                     .background(
-                        if (isSelected) Color.White else Color.Transparent
+                        color = if (isSelected) Color(0xFF007AFF) else Color.Transparent,
+                        shape = RoundedCornerShape(20.dp)
                     )
-                    .border(
-                        width = if (isSelected) 0.5.dp else 0.dp,
-                        color = if (isSelected) Color(0xFFE0E0E0) else Color.Transparent,
-                        shape = RoundedCornerShape(18.dp)
-                    )
-                    .clickable { onPeriodChange(period) }
-                    .padding(horizontal = 16.dp, vertical = 10.dp),
+                    .clickable { onOptionSelected(option) }
+                    .padding(vertical = 8.dp, horizontal = 16.dp),
                 contentAlignment = Alignment.Center
             ) {
                 Row(
                     verticalAlignment = Alignment.CenterVertically,
                     horizontalArrangement = Arrangement.Center
                 ) {
+                    // Add icon if needed
+                    if (option == "午前") {
+                        Icon(
+                            painter = painterResource(id = R.drawable.ic_sun),
+                            contentDescription = "Sun Icon",
+                            tint = if (isSelected) Color.White else Color.Gray,
+                            modifier = Modifier.size(14.dp)
+                        )
+                        Spacer(modifier = Modifier.width(4.dp))
+                    } else {
+                        Icon(
+                            painter = painterResource(id = R.drawable.ic_moon),
+                            contentDescription = "Moon Icon",
+                            tint = if (isSelected) Color.White else Color.Gray,
+                            modifier = Modifier.size(14.dp)
+                        )
+
+                        Spacer(modifier = Modifier.width(4.dp))
+                    }
+
                     Text(
-                        text = period.icon,
-                        fontSize = 14.sp
-                    )
-                    Spacer(modifier = Modifier.width(4.dp))
-                    Text(
-                        text = period.displayName,
+                        text = option,
+                        color = if (isSelected) Color.White else Color(0xFF666666),
                         fontSize = 14.sp,
-                        fontWeight = if (isSelected) FontWeight.Medium else FontWeight.Normal,
-                        color = if (isSelected) Color(0xFF007AFF) else Color(0xFF666666)
+                        fontWeight = if (isSelected) FontWeight.Medium else FontWeight.Normal
                     )
                 }
             }
         }
     }
 }
+

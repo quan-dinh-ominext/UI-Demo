@@ -34,7 +34,7 @@ fun AlcoholScreen(
             modifier = Modifier
                 .fillMaxSize()
                 .verticalScroll(rememberScrollState())
-                .padding(16.dp)
+                .padding(horizontal = 16.dp)
         ) {
             DateNavigationBar(
                 currentDate = selectedDate,
@@ -42,7 +42,6 @@ fun AlcoholScreen(
                     selectedDate = newDate
                 }
             )
-            Spacer(modifier = Modifier.height(16.dp))
 
             uiState.errorMessage?.let { error ->
                 ErrorMessage(
@@ -70,14 +69,14 @@ fun AlcoholScreen(
                 isError = uiState.errorMessage?.contains("量") == true
             )
 
-            Spacer(modifier = Modifier.height(20.dp))
+            Spacer(modifier = Modifier.height(16.dp))
 
             CountSection(
                 count = uiState.count,
                 onCountChange = viewModel::updateCount
             )
 
-            Spacer(modifier = Modifier.height(24.dp))
+            Spacer(modifier = Modifier.height(16.dp))
 
             HistorySection(
                 historyEntries = uiState.historyEntries,

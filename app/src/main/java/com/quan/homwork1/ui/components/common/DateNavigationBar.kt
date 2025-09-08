@@ -13,6 +13,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.quan.homwork1.ui.theme.TextSecondary
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -66,9 +67,10 @@ fun DateNavigationBar(
 
         Text(
             "${dateFormat.format(currentDate)}$todayIndicator",
-            fontSize = 16.sp,
-            color = Color.Black,
-            fontWeight = FontWeight.Medium,
+            fontSize = 14.sp,
+            lineHeight = 16.sp,
+            color = TextSecondary,
+            fontWeight = FontWeight.W700,
             modifier = Modifier.weight(1f),
             textAlign = TextAlign.Center
         )
