@@ -12,7 +12,7 @@ enum class Destination(
     TAB2("tab2", "食事",  "Tab2"),
     TAB3("tab3", "体重",  "Tab3"),
     TAB4("tab4", "腹囲",  "Tab4"),
-    TAB5("tab5", "睡眠",  "Tab5"),
+    SLEEP("sleep", "睡眠",  "sleep"),
     TAB6("tab6", "血圧",  "Tab6"),
     TAB7("tab7", "飲酒",  "Tab7")
 }

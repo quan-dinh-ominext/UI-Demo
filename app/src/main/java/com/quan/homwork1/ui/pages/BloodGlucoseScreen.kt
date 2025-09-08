@@ -110,6 +110,7 @@ fun BloodGlucoseScreen() {
 
                 TimeInputWithPicker(
                     time = selectedTime,
+                    title = "測定時間",
                     onTimeChange = { selectedTime = it },
                     modifier = Modifier.weight(1f)
                 )
@@ -182,13 +183,14 @@ fun BloodGlucoseScreen() {
 @Composable
 fun TimeInputWithPicker(
     time: String,
+    title: String,
     onTimeChange: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {
     var showTimePicker by remember { mutableStateOf(false) }
 
     Column(modifier = modifier) {
-        SectionTitle(mainText = "測定時間")
+        SectionTitle(mainText = title)
 
         CustomOutlinedTextField(
             value = time,
