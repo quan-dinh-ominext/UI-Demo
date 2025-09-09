@@ -26,6 +26,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.quan.homwork1.data.model.HistoryEntry
 import com.quan.homwork1.ui.common.SectionTitle
+import com.quan.homwork1.ui.theme.ColorUnselected
 import com.quan.homwork1.ui.theme.TextSecondary
 
 @Composable
@@ -52,7 +53,7 @@ fun HistorySection(
                     HorizontalDivider(
                         color = Color.Gray.copy(alpha = 0.3f),
                         thickness = 1.dp,
-                        modifier = Modifier.padding(vertical = 8.dp)
+                        modifier = Modifier.padding(bottom = 8.dp)
                     )
                 }
 
@@ -95,7 +96,7 @@ private fun HistoryEntryItem(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(16.dp),
+                .padding(horizontal = 16.dp),
             horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically,
         ) {
@@ -103,16 +104,19 @@ private fun HistoryEntryItem(
 
                 Text(
                     text = entry.volume,
-                    fontSize = 16.sp,
-                    fontWeight = FontWeight.Medium,
-                    color = Color.Black,
+                    fontSize = 14.sp,
+                    lineHeight = 16.sp,
+                    fontWeight = FontWeight.W700,
+                    color = TextSecondary,
                     modifier = Modifier.weight(1f)
                 )
 
                 Text(
                     text = entry.percentage,
-                    fontSize = 14.sp,
-                    color = Color.Gray,
+                    fontSize = 12.sp,
+                    lineHeight = 12.sp,
+                    color = ColorUnselected,
+                    fontWeight = FontWeight.W400,
                     modifier = Modifier.weight(2f)
                 )
 
@@ -121,7 +125,9 @@ private fun HistoryEntryItem(
                 Text(
                     text = "数：${entry.count}",
                     fontSize = 12.sp,
-                    color = Color.Gray,
+                    lineHeight = 12.sp,
+                    color = ColorUnselected,
+                    fontWeight = FontWeight.W400,
                     modifier = Modifier.weight(1f)
                 )
 
@@ -131,7 +137,7 @@ private fun HistoryEntryItem(
                 ) {
                     Icon(
                         Icons.Default.Delete,
-                        contentDescription = "削除",
+                        contentDescription = "delete",
                         tint = Color(0xFFE57373),
 
                     )

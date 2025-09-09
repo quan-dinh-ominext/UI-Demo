@@ -29,7 +29,7 @@ fun VolumeSection(
         CustomTextField(
             value = value,
             onValueChange = onValueChange,
-            placeholder = "量を入力",
+            placeholder = "-",
             isError = isError
         )
 

@@ -7,7 +7,20 @@ pluginManagement {
                 includeGroupByRegex("androidx.*")
             }
         }
-        mavenCentral()
+
+        mavenCentral() {
+            content {
+                includeGroup("com.google.dagger")
+                includeGroup("com.google.dagger.hilt.android")
+            }
+            mavenContent {
+                releasesOnly()
+            }
+        }
+
+        maven {
+            url = uri("https://jitpack.io")
+        }
         gradlePluginPortal()
     }
 }
@@ -15,7 +28,17 @@ dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
-        mavenCentral()
+
+        maven {
+            url = uri("https://jitpack.io")
+        }
+
+        // fetch libraries from maven central
+        mavenCentral() {
+            mavenContent {
+                releasesOnly()
+            }
+        }
     }
 }
 

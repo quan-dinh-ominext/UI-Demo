@@ -20,7 +20,7 @@ fun SubmitButton(
 ) {
     Button(
         onClick = onClick,
-        enabled = isEnabled && !isLoading,
+//        enabled = isEnabled && !isLoading,
         modifier = modifier
             .fillMaxWidth()
             .height(48.dp),

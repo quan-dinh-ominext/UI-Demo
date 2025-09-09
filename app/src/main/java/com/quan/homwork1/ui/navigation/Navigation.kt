@@ -30,6 +30,7 @@ import androidx.navigation.compose.rememberNavController
 import com.quan.homwork1.ui.model.Destination
 import com.quan.homwork1.ui.pages.AlcoholScreen
 import com.quan.homwork1.ui.pages.BloodGlucoseScreen
+import com.quan.homwork1.ui.pages.SleepDetailScreen
 import com.quan.homwork1.ui.pages.SleepTrackingScreen
 //import com.quan.homwork1.ui.pages.BloodGlucoseScreen
 import com.quan.homwork1.ui.pages.SmokeScreen
@@ -55,7 +56,7 @@ fun AppNavHost(
                     Destination.TAB2 -> null
                     Destination.TAB3 -> null
                     Destination.TAB4 -> null
-                    Destination.SLEEP -> SleepTrackingScreen()
+                    Destination.SLEEP -> SleepDetailScreen()
                     Destination.TAB6 -> null
                     Destination.TAB7 -> null
 

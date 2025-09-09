@@ -9,6 +9,7 @@ import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -16,6 +17,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.quan.homwork1.ui.components.common.DateNavigationBar
+import java.util.Date
 
 //@OptIn(ExperimentalMaterial3Api::class)
 
@@ -24,6 +27,7 @@ fun SmokeScreen(
     modifier: Modifier = Modifier
 ) {
     var count by remember { mutableIntStateOf(0) }
+    var selectedDate by remember { mutableStateOf(Date()) }
 
     Column(
         modifier = modifier
@@ -31,36 +35,12 @@ fun SmokeScreen(
 
     ) {
 
-        Row(
-            modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.SpaceBetween,
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-            IconButton(onClick = { }) {
-                Icon(
-                    Icons.AutoMirrored.Filled.KeyboardArrowLeft,
-                    contentDescription = "Previous",
-                    tint = MaterialTheme.colorScheme.onSurface
-                )
+        DateNavigationBar(
+            currentDate = selectedDate,
+            onDateChanged = { newDate ->
+                selectedDate = newDate
             }
-
-            Text(
-                text = "2025/04/13 (日) • 本日",
-                fontSize = 14.sp,
-                fontWeight = FontWeight.W700,
-                color = Color(0xFF5B6B86),
-            )
-
-            IconButton(onClick = { }) {
-                Icon(
-                    Icons.AutoMirrored.Filled.KeyboardArrowRight,
-                    contentDescription = "Next",
-                    tint = MaterialTheme.colorScheme.onSurface
-                )
-            }
-        }
-
-        Spacer(modifier = Modifier.height(12.dp))
+        )
 
         Row {
             Text(
@@ -155,7 +135,6 @@ fun SmokeScreen(
                 fontWeight = FontWeight.W500,
                 lineHeight = 16.sp
             )
-
         }
     }
 }

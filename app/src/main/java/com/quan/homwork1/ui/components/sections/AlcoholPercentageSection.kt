@@ -29,7 +29,7 @@ fun AlcoholPercentageSection(
         CustomTextField(
             value = value,
             onValueChange = onValueChange,
-            placeholder = "度数を入力",
+            placeholder = "-",
             isError = isError
         )
 

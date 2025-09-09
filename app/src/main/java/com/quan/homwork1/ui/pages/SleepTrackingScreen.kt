@@ -42,11 +42,12 @@ import androidx.compose.material3.*
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SleepTrackingScreen() {
-    var bedtime by remember { mutableStateOf("00:00") }
-    var wakeupTime by remember { mutableStateOf("00:00") }
+    var bedtime by remember { mutableStateOf("") }
+    var wakeupTime by remember { mutableStateOf("") }
     var sleepQuality by remember { mutableStateOf("") }
     var showDropdown by remember { mutableStateOf(false) }
     var selectedDate by remember { mutableStateOf(Date()) }
+    val listSleep = listOf("とても良い", "良い", "普通", "悪い", "とても悪い")
 
     val icon = if (showDropdown)
         Icons.Filled.KeyboardArrowUp
@@ -104,7 +105,7 @@ fun SleepTrackingScreen() {
                     value = sleepQuality,
                     onValueChange = { },
                     isEnable = false,
-                    placeholder = "-",
+                    placeholder = "選択してください",
                     trailingIcon = {
                         Icon(
                             imageVector = icon,
@@ -122,9 +123,13 @@ fun SleepTrackingScreen() {
                     onDismissRequest = { showDropdown = false },
                     containerColor = Color.White
                 ) {
-                    listOf("とても良い", "良い", "普通", "悪い", "とても悪い").forEach { option ->
+                    listSleep.forEach { option ->
                         DropdownMenuItem(
-                            text = { Text(option) },
+                            text = { Text(option,
+                                fontSize = 14.sp,
+                                fontWeight = FontWeight.W400,
+                                lineHeight = 16.sp
+                                ) },
                             onClick = {
                                 sleepQuality = option
                                 showDropdown = false

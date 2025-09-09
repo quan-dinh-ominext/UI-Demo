@@ -55,6 +55,7 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import com.quan.homwork1.R
 import com.quan.homwork1.ui.common.SectionTitle
+import com.quan.homwork1.ui.components.buttons.CustomSwitchButton
 import com.quan.homwork1.ui.components.common.CustomOutlinedTextField
 import com.quan.homwork1.ui.components.common.DateNavigationBar
 import com.quan.homwork1.ui.theme.BorderColor
@@ -120,7 +121,7 @@ fun BloodGlucoseScreen() {
 
             SectionTitle(mainText = "測定期間")
 
-            TimeToggle(
+            CustomSwitchButton(
                 selectedOption = selectedPeriod,
                 onOptionSelected = { selectedPeriod = it },
                 modifier = Modifier
@@ -130,7 +131,6 @@ fun BloodGlucoseScreen() {
 
             Spacer(modifier = Modifier.height(8.dp))
 
-//            TodayBloodSugarValues()
             TodayBloodSugarValues(
                 records = bloodSugarRecords,
                 onDeleteRecord = { recordId ->
@@ -140,7 +140,6 @@ fun BloodGlucoseScreen() {
 
             Spacer(modifier = Modifier.height(24.dp))
 
-            // Measurement Info
             MeasurementInfo()
 
             Spacer(modifier = Modifier.height(24.dp))
@@ -324,67 +323,6 @@ fun BloodSugarInput(
         )
     }
 }
-
-@Composable
-fun TimeToggle(
-    selectedOption: String,
-    onOptionSelected: (String) -> Unit,
-    modifier: Modifier = Modifier
-) {
-    val options = listOf("午前", "午后")
-
-    Row(
-        modifier = modifier
-            .background(
-                color = Color(0xFFF5F5F5),
-                shape = RoundedCornerShape(25.dp)
-            )
-            .padding(4.dp)
-    ) {
-        options.forEach { option ->
-            val isSelected = option == selectedOption
-
-            Box(
-                modifier = Modifier
-                    .weight(1f)
-                    .clip(RoundedCornerShape(20.dp))
-                    .background(
-                        color = if (isSelected) Color.White else Color.Transparent
-                    )
-                    .clickable { onOptionSelected(option) }
-                    .padding(4.dp),
-                contentAlignment = Alignment.Center
-            ) {
-                Row(
-                    verticalAlignment = Alignment.CenterVertically,
-                    horizontalArrangement = Arrangement.Center
-                ) {
-                    if (option == "午前") {
-                        Icon(
-                            painter = painterResource(id = R.drawable.ic_sun),
-                            contentDescription = "Sun Icon",
-                            tint = if (isSelected) TextBlue else ColorUnselected,
-                        )
-                    } else {
-                        Icon(
-                            painter = painterResource(id = R.drawable.ic_moon),
-                            contentDescription = "Sun Icon",
-                            tint = if (isSelected) TextBlue else ColorUnselected,
-                        )
-                    }
-
-                    Text(
-                        text = option,
-                        color = if (isSelected) TextBlue else ColorUnselected,
-                        fontSize = 14.sp,
-                        fontWeight = FontWeight.W500
-                    )
-                }
-            }
-        }
-    }
-}
-
 @Composable
 fun TodayBloodSugarValues(
     records: List<BloodSugarRecord>,

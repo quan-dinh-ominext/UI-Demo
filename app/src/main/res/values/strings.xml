@@ -1,45 +1,324 @@
 <resources>
-    <string name="app_name">homwork1</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+<string name="app_name">Homwork</string>
+<string name="app_name_launcher_main">Homwork</string>
+<string name="app_name_with_suffix">%1$s %2$s</string>
 
-    <string name="lorem_ipsum">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
-        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
-        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
-        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
-        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
-        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
-        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
-        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
-        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
-        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
-        bibendum, vel congue leo egestas.\n\n
-        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
-        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
-        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
-        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
-        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
-        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
-        est.\n\n
-        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
-        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
-        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
-        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
-        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
-        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
-        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
-        convallis.\n\n
-        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
-        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
-        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
-        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
-        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
-        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
-        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
-    </string>
+    <!-- Strings used for fragments for navigation -->
+<string name="first_fragment_label">First Fragment</string>
+<string name="second_fragment_label">Second Fragment</string>
+<string name="next">Next</string>
+<string name="previous">Previous</string>
+
+<string name="lorem_ipsum">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+    volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+    dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+    litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+    diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+    ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+    Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+    egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+    neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+    fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+    molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+    bibendum, vel congue leo egestas.\n\n
+    Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+    amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+    molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+    interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+    lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+    in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+    est.\n\n
+    Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+    Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+    non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+    eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+    quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+    ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+    placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+    convallis.\n\n
+    Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+    malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+    gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+    libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+    sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+    libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+    vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+</string>
+
+<string name="title_top">ホーム</string>
+<string name="menu_settings">メニュー</string>
+<string name="login_splash_screen_desc">スプラッシュスクリーン</string>
+<string name="login_title_phr_system">PHRシステム</string>
+<string name="login_subtitle_login_to_account">お客様のアカウントにログイン</string>
+
+<string name="login_label_login_id">ログインID</string>
+<string name="login_placeholder_login_id">ログインIDを入力</string>
+<string name="login_cd_login_id_icon">ログインID アイコン</string>
+<string name="login_label_password">パスワード</string>
+<string name="login_placeholder_password">パスワードを入力</string>
+<string name="login_cd_password_icon">パスワード アイコン</string>
+<string name="login_cd_hide_password">パスワードを非表示</string>
+<string name="login_cd_show_password">パスワードを表示</string>
+<string name="login_button_login">ログイン</string>
+<string name="login_text_forgot_password">パスワードを忘れた方へ</string>
+<string name="login_text_register_here">新規登録はこちら</string>
+
+<string name="error_login_id_password_incorrect">ログインID、パスワードに誤りがあります</string>
+<string name="error_validation_username_short">ユーザー名は5文字以上で入力してください。</string>
+<string name="error_validation_password_format">パスワードの形式が正しくありません。</string>
+<string name="dialog_button_ok">OK</string>
+
+<string name="top_bar_title_health_portal">健康ポータル</string>
+<string name="top_bar_cd_profile">プロフィール</string>
+<string name="top_bar_cd_notifications">お知らせ</string>
+<string name="month_switcher_previous">前の月</string>
+<string name="month_switcher_next">次の月</string>
+<string name="month_switcher_current_date_icon_desc">カレンダーアイコン</string>
+<string name="notification_bar_default_message">お知らせお知らせお知らせお知らせ・・・</string>
+<string name="notification_bar_default_date">2025-04-02</string>
+<string name="notification_bar_info_icon_desc">お知らせアイコン</string>
+
+<string name="achievement_banner_goal_achieved">本日の目標入力達成</string>
+<string name="achievement_banner_stamp_desc">達成スタンプ</string>
+<string name="achievement_banner_firework_left_desc">左の装飾</string>
+<string name="achievement_banner_firework_right_desc">右の装飾</string>
+<string name="dialog_login_streak_title_prefix">連続ログイン</string>
+<string name="dialog_login_streak_title_suffix">日目</string>
+<string name="dialog_day_suffix">日目</string>
+<string name="dialog_cd_close_button">ダイアログを閉じる</string>
+<string name="dialog_cd_completed_stamp">達成スタンプ</string>
+<string name="dialog_cd_special_day_effect">特別効果</string>
+<string name="title_sad_dizzy_fb_card">でき\nなかった</string>
+<string name="title_frown_fb_card">ややでき\nなかった</string>
+<string name="title_meh_fb_card">普通</string>
+<string name="title_smile_fb_card">やや\nできた</string>
+<string name="title_grin_fb_card">できた</string>
+<string name="title_input_step">歩数</string>
+<string name="title_input_sleep">睡眠</string>
+<string name="title_input_weight_scale">体重</string>
+<string name="title_input_body_shape">腹囲</string>
+<string name="title_input_mdi_food">食事</string>
+<string name="title_input_ecg_heart">血圧</string>
+<string name="title_input_mdi_wine">飲酒</string>
+<string name="title_input_smoking_area">喫煙</string>
+<string name="title_blood_sugar_life_style_card">血糖</string>
+<string name="title_input_life_style">生活習慣5項目</string>
+
+<string name="title_strongest_sleepiness_life_style_card">かなり\n強い\n眠気あり</string>
+<string name="title_strong_sleepiness_life_style_card">強い\n眠気あり</string>
+<string name="title_sleepiness_life_style_card">眠気あり</string>
+<string name="title_light_sleepiness_life_style_card">やや\n眠気あり</string>
+<string name="title_no_sleepiness_life_style_card">眠気なし</string>
+
+<string name="title_bad_condition_life_style_card">不調</string>
+<string name="title_slightly_bad_condition_life_style_card">やや不調</string>
+<string name="title_normal_condition_life_style_card">普通</string>
+<string name="title_slightly_good_condition_life_style_card">やや好調</string>
+<string name="title_good_condition_life_style_card">好調</string>
+
+<string name="title_no_bowel_movement_life_style_card">でない</string>
+<string name="title_hard_balls_life_style_card">コロコロ</string>
+<string name="title_hard_life_style_card">硬い</string>
+<string name="title_slightly_hard_life_style_card">やや硬い</string>
+<string name="title_normal_bowel_life_style_card">普通</string>
+<string name="title_slightly_soft_life_style_card">やや\n軟らかい</string>
+<string name="title_muddy_life_style_card">泥状</string>
+<string name="title_watery_life_style_card">水様</string>
+
+<string name="title_bad_life_style_card">悪い</string>
+<string name="title_slightly_bad_life_style_card">やや悪い</string>
+<string name="title_normal_life_style_card">普通</string>
+<string name="title_slightly_good_life_style_card">やや良い</string>
+<string name="title_good_life_style_card">良い</string>
+<string name="title_blood_pressure_morning">朝</string>
+<string name="title_blood_pressure_night">夜</string>
+<string name="title_blood_pressure_unit">%d mg/dL</string>
+<string name="title_blood_pressure_low">低い</string>
+<string name="title_blood_pressure_normal">正常</string>
+<string name="title_blood_pressure_slightly_high">やや高め</string>
+<string name="title_blood_pressure_high">高い</string>
+
+<string name="subtitle_input_mdi_food">摂取カロリー</string>
+<string name="top_input_title">日々入力</string>
+<string name="weight_current_unit_kg">kg</string>
+<string name="weight_goal_prefix">体重目的</string>
+<string name="info_bmi_label">BMI</string>
+<string name="info_body_fat_percentage_label">体脂肪率</string>
+<string name="progress_target_prefix">腹囲目的</string>
+
+<string name="action_plan_content">* 現在の食習慣と運動量の把握\n1週間、食事内容と運動を記録する。\n* 摂取カロリーの目標設定\n1日あたり約500kcal減らすことで、週に約0.5kgの減量を目指す。\n* 食べ方の工夫\n小さめの皿を使い、適正量を意識する。\nお菓子や高カロリーの間食を果物やナッツに置き換える。\n* 野菜と食物繊維を増やす\n昼食と夕食に野菜を必ず1皿追加する。\n* 運動習慣の確立\n週に150分のウォーキングや水泳などを行う。\n* 定期的な評価\n週に一度、同じ条件で体重を測る。\n2〜4週間ごとに見直しを行う。</string>
+<string name="action_plan_title">行動計画</string>
+
+<string name="dialog_logout_confirmation">このアカウントをログアウトしますか？</string>
+<string name="dialog_logout_button">ログアウト</string>
+<string name="dialog_logout_cancel_button">キャンセル</string>
+
+<string name="menu_title">メニュー</string>
+<string name="menu_health_analysis">健康指標分析</string>
+<string name="menu_steps">歩行</string>
+<string name="menu_meal">食事</string>
+<string name="menu_sleep">睡眠</string>
+<string name="menu_alcohol">飲酒</string>
+<string name="menu_smoking">喫煙</string>
+<string name="menu_vital">バイタル</string>
+<string name="menu_health_check_data">健診データ</string>
+<string name="menu_goal1">目標1</string>
+<string name="menu_goal2">目標2</string>
+<string name="menu_goal3">目標3</string>
+<string name="menu_goal4">目標4</string>
+<string name="menu_goal5">目標5</string>
+<string name="menu_health_guidance_zoom">保健指導 (ZOOM)</string>
+<string name="menu_notifications">お知らせ</string>
+<string name="menu_home_settings">ホーム画面設定</string>
+<string name="menu_account_settings">アカウント設定</string>
+<string name="menu_data_link_settings">データ連携設定</string>
+<string name="menu_faq">よくある質問</string>
+<string name="menu_terms_of_service">利用規約</string>
+<string name="menu_privacy_policy">プライバシーポリシー</string>
+<string name="menu_logout">ログアウト</string>
+<string name="menu_app_version_prefix">アプリバージョン</string>
+
+<string name="cd_back_arrow">戻る</string>
+<string name="cd_external_link">外部リンク</string>
+<string name="cd_navigate_next">詳細</string>
+<string name="cd_sub_item_indicator">dot</string>
+<string name="empty_string" />
+<string name="top_bar_cd_back">Back</string>
+<string name="title_profile_screen">ユーザー情報</string>
+
+<string name="profile_id_prefix">ID</string>
+<string name="profile_nickname_label">ニックネーム</string>
+<string name="profile_email_label">メールアドレス</string>
+<string name="profile_gender_label">性別</string>
+<string name="profile_birthday_label">生年月日</string>
+<string name="profile_application_date_label">申込み日</string>
+<string name="profile_organization_label">所属団体</string>
+<string name="profile_button_change_info">情報を変更する</string>
+<string name="profile_button_save_changes">変更を保存</string>
+<string name="profile_button_reset_password">パスワード再設定</string>
+<string name="profile_gender_male">男性</string>
+<string name="profile_gender_female">女性</string>
+<string name="cd_copy_id">IDをコピー</string>
+
+<string name="profile_content_id">#%s</string>
+
+<string name="two_factor_auth_title">二段階認証</string>
+<string name="two_factor_auth_description">登録されているメールアドレスに送信された認証コードを入力してください。</string>
+<string name="two_factor_auth_code_label">認証コード</string>
+<string name="two_factor_auth_resend_code">認証コードを再送信</string>
+<string name="two_factor_auth_next_button">次へ</string>
+<string name="two_factor_title_dialog_error">認証コードが期限切れです。\nコードを再送信してください。</string>
+<string name="title_change_password_screen">パスワード再設定</string>
+<string name="change_password_button_save">パスワードを再設定する</string>
+
+<string name="error_validation_password_length">パスワードは8文字以上15文字以下で入力してください。</string>
+<string name="change_password_label_old_password">旧パスワード</string>
+<string name="change_password_label_new_password">新パスワード</string>
+<string name="change_password_label_confirm_new_password">新パスワード（確認）</string>
+
+<string name="error_validation_old_password_required">旧パスワードを入力してください。</string>
+<string name="error_validation_new_password_required">新しいパスワードを入力してください。</string>
+<string name="error_validation_new_password_format">パスワードは8文字から15文字の半角英数字で入力してください。</string>
+<string name="error_validation_confirm_new_password_required">新しいパスワード（確認）を入力してください。</string>
+<string name="error_validation_new_password_mismatch">新しいパスワードと確認用パスワードが一致しません。</string>
+
+<string name="error_2fa_code_empty">認証コードを入力してください。</string>
+<string name="error_2fa_code_too_short">認証コードは6桁で入力してください。</string>
+<string name="cd_checkbox_checked">ID、パスワードを保持する checked</string>
+<string name="cd_checkbox_unchecked">ID、パスワードを保持する unchecked</string>
+
+<string name="login_remember_me">ID、パスワードを保持する</string>
+
+<string name="notification_personal_title">個人からのお知らせ</string>
+<string name="cd_notification_personal">personal</string>
+<string name="notification_municipality_title">自治体からのお知らせ</string>
+<string name="cd_notification_municipality">municipality</string>
+<string name="notification_system_title">システムからのお知らせ</string>
+<string name="cd_notification_system">system</string>
+<string name="notification_see_more">詳しく見る</string>
+<string name="notification_mark_all_as_read">すべてを既読にする</string>
+<string name="notification_badge_count">%d+</string>
+<string name="notification_screen_title">お知らせ一覧</string>
+<string name="notification_detail_screen_title">お知らせ詳細</string>
+<string name="notification_detail_title">詳細</string>
+<string name="notification_read_all_title">すべてを既読</string>
+
+<!-- Period Selector -->
+<string name="period_day">日</string>
+<string name="period_week">週</string>
+<string name="period_month">月</string>
+<string name="period_year">年</string>
+
+<!-- Summary Section -->
+<string name="average_steps_label">平均歩数</string>
+<string name="steps_unit_card">%s 歩</string>
+<string name="steps_unit">歩</string>
+<string name="total_steps_label">合計 %s 歩</string>
+<string name="average_weight_label">平均体重</string>
+
+<!-- Detailed Stats Section -->
+<string name="average_calories_label">平均カロリー</string>
+<string name="average_distance_label">平均距離</string>
+<string name="average_walking_time_label">平均歩行 時間</string>
+<string name="kcal_unit">%s kcal</string>
+<string name="km_unit">%.2f km</string>
+<string name="gram_unit">%d g</string>
+<string name="minutes_unit">%d 分</string>
+<string name="average_protein_label">平均 たんぱく質</string>
+<string name="average_carbohydrates_label">平均炭水化物</string>
+<string name="average_fat_label">平均脂質</string>
+<string name="average_salt_label">平均塩分</string>
+
+<!-- Step Detail Item -->
+<string name="steps_label">歩数</string>
+<string name="steps_goal_format">%1$d/%2$d 歩</string>
+<string name="calories_burned_label">消費カロリー</string>
+
+<!-- Health Connect Banner -->
+<string name="health_connect_banner_text">ヘルス コネクト と 連携 する と 、 歩数 や 睡眠 データが 自動 記録 さ れ 、 健康 管理 が 簡単 に なり ます 。</string>
+
+<!-- Other Content Fallback -->
+<string name="ui_for_tab">UI for %s</string>
+
+<string name="health_graph_title">健康グラフ</string>
+<string name="record_screen_title">記録画面</string>
+
+<string name="health_connect_description">連携すると、歩数や睡眠などの健康データを\n自動で取り込み、\n記録の手間なく、健康管理に役立てられます。</string>
+<string name="health_connect_data_title">連携により共有されるデータ：</string>
+<string name="health_connect_data_description">・歩数データ\n・睡眠データ\n・身体測定データ</string>
+
+<string name="health_connect_agree_button">連携する</string>
+<string name="health_connect_screen_title">連携設定</string>
+
+<string name="notification_detail_dummy">お知らせのコンテンツお知らせのコンテンツテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストお知らせのコンテンツお知らせのコンテンツお知らせのコンテンツお知らせのコンテンツテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</string>
+<string name="title_health_connect_description">Health Connect</string>
+<string name="common_cancel">Cancel</string>
+<string name="kcal_unit_short">kcal</string>
+<string name="bmi_label">BMI</string>
+<string name="body_fat_percentage_label">体脂肪率</string>
+<string name="percent_unit">%.1f%%</string>
+<string name="kg_unit">kg</string>
+<string name="cm_unit">cm</string>
+<string name="progress_target_circumference">腹囲目的</string>
+<string name="average_circumference_label">平均腹囲</string>
+<string name="edit_data_title">データを編集</string>
+<string name="average_sleep_duration_label">睡眠時間</string>
+<string name="average_sleep_efficiency_label">睡眠効率</string>
+<string name="average_wake_up_time_label">起床時間</string>
+<string name="average_sleep_time_label">就寝時間</string>
+<string name="average_title">平均</string>
+<string name="average_sleep_duration_title">平均睡眠時間</string>
+<string name="average_heart_rate_label">平均脈拍</string>
+<string name="mmhg_unit">mmHg</string>
+<string name="bpm_unit">bpm</string>
+<string name="average_systolic_pressure_label">平均最高血圧</string>
+<string name="average_diastolic_pressure_label">平均最低血圧</string>
+<string name="average_heart_rate_title">平均脈拍</string>
+
+<string name="today_total_steps_label">本日の合計</string>
+<string name="record_health_walking_time_label">歩行時間</string>
+<string name="record_health_walking_time_score">(分)</string>
+<string name="home_settings_title">ホーム設定</string>
 </resources>
+
